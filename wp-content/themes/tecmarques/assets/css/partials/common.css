@@ -1,0 +1,47 @@
+@charset "UTF-8";/* UTF-8 before doing anything */
+
+/*!
+* Publisher: Next Sites
+* Copyright: Next Sites 2015
+*
+* Author: Next Sites
+*
+* Develop: Paulo Melo
+*/
+
+
+/* Reset default styles */
+@import url("reset.css");
+
+/* Base CSS */
+@import url("modules/base.css");
+@import url("modules/typography.css");
+@import url("modules/form.css");
+@import url("modules/table.css");
+
+/* Grid system and page structure */
+@import url("modules/grid.css");
+@import url("modules/clearfix.css");
+
+/* Components: Buttons & Icons */
+@import url("modules/inputs.css");
+@import url("modules/buttons.css");
+@import url("modules/font-awesome.css");
+@import url("modules/animation.css");
+@import url("modules/utilities.css");
+
+/* Plugins */
+@import url("modules/modal.css");
+@import url("plugins/owl.css");
+@import url("plugins/mmenu.css");
+
+/* Theme Components */
+@import url("components/header.css");
+@import url("components/footer.css");
+
+/* Theme */
+@import url("screen.css");
+
+/* Global */
+@import url("responsive.css");
+@import url("modules/atomic-css.css");

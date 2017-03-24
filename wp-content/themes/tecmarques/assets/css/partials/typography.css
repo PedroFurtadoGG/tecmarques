@@ -1,0 +1,152 @@
+/*
+  typography.css
+  Atualização dia 23-03-2016. Por Paulo Melo */
+
+
+/*
+	  roboto.css */
+
+@font-face {
+  font-family: "Roboto-Thin";
+  font-style: normal;
+  src: url("../fonts/Roboto/Thin/Roboto-Thin.woff2?v=1.1.0") format("woff2"), url("../fonts/Roboto/Thin/Roboto-Thin.woff?v=1.1.0") format("woff"), url("../fonts/Roboto/Thin/Roboto-Thin.ttf?v=1.1.0") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Light";
+  font-style: normal;
+  src: url("../fonts/Roboto/Light/Roboto-Light.woff2?v=1.1.0") format("woff2"), url("../fonts/Roboto/Light/Roboto-Light.woff?v=1.1.0") format("woff"), url("../fonts/Roboto/Light/Roboto-Light.ttf?v=1.1.0") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  src: url("../fonts/Roboto/Regular/Roboto-Regular.woff2?v=1.1.0") format("woff2"), url("../fonts/Roboto/Regular/Roboto-Regular.woff?v=1.1.0") format("woff"), url("../fonts/Roboto/Regular/Roboto-Regular.ttf?v=1.1.0") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Italic";
+  font-style: italic;
+  src: url("../fonts/Roboto/Italic/Roboto-Italic.woff2?v=1.1.0") format("woff2"), url("../fonts/Roboto/Italic/Roboto-Italic.woff?v=1.1.0") format("woff"), url("../fonts/Roboto/Italic/Roboto-Italic.ttf?v=1.1.0") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Medium";
+  font-style: normal;
+  src: url("../fonts/Roboto/Medium/Roboto-Medium.woff2?v=1.1.0") format("woff2"), url("../fonts/Roboto/Medium/Roboto-Medium.woff?v=1.1.0") format("woff"), url("../fonts/Roboto/Medium/Roboto-Medium.ttf?v=1.1.0") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Bold";
+  font-style: normal;
+  src: url("../fonts/Roboto/Bold/Roboto-Bold.woff2?v=1.1.0") format("woff2"), url("../fonts/Roboto/Bold/Roboto-Bold.woff?v=1.1.0") format("woff"), url("../fonts/Roboto/Bold/Roboto-Bold.ttf?v=1.1.0") format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto-Black";
+  font-style: normal;
+  src: url("../fonts/Roboto/Black/Roboto-Black.woff2?v=1.1.0") format("woff2"), url("../fonts/Roboto/Black/Roboto-Black.woff?v=1.1.0") format("woff"), url("../fonts/Roboto/Black/Roboto-Black.ttf?v=1.1.0") format("truetype");
+}
+
+@media (min-width:0px) and (max-width:640px) {
+  :root {
+    font: normal normal normal 14px/1.439 "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  }
+}
+
+@media (min-width:641px) and (max-width:1023px) {
+  :root {
+    font: normal normal normal 15px/1.339 "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  }
+}
+
+@media (min-width:1024px) {
+  :root {
+    font: normal normal normal 16px/1.239 "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  }
+}
+
+body {
+  color: rgba(15, 18, 21, 0.8);
+  font-family: "Roboto-Regular", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+input, select, textarea {
+  font-family: "Roboto-Medium", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+b, strong {
+  font-family: "Roboto-Bold", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+label, option {
+  font-family: "Roboto-Bold", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.25rem;
+}
+
+h5 {
+  font-size: 1rem;
+}
+
+h6 {
+  font-size: 0.9rem;
+}
+
+h1, h2 {
+  font-family: "Roboto-Medium", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+h3, h4 {
+  font-family: "Roboto-Bold", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+h5, h6 {
+  font-family: "Roboto-Black", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+dfn, em, i {
+  font-family: "Roboto-Italic", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
+a[href~="mailto"] {
+  text-decoration: underline
+}
+
+.text-light {
+  font-family: "Roboto-Light", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+}
+
+.text-regular {
+  font-family: "Roboto", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+}
+
+.text-medium {
+  font-family: "Roboto-Medium", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+}
+
+.text-bold {
+  font-family: "Roboto-Bold", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+}
+
+.text-black {
+  font-family: "Roboto-Black", "Helvetica Neue", "Helvetica", "Arial", sans-serif !important;
+}
+
+.link:hover {
+  text-decoration: underline;
+}

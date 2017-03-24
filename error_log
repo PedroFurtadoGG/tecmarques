@@ -1,0 +1,13 @@
+[31-Jan-2016 12:45:53] PHP Parse error:  syntax error, unexpected T_FUNCTION in /home/tecma713/public_html/site/wp-content/plugins/pack-oll/plugin.php on line 51
+[31-Jan-2016 12:48:01] PHP Parse error:  syntax error, unexpected T_FUNCTION in /home/tecma713/public_html/site/wp-content/plugins/pack-oll/plugin.php on line 51
+[31-Jan-2016 12:51:05] PHP Parse error:  syntax error, unexpected T_FUNCTION in /home/tecma713/public_html/site/wp-content/plugins/pack-oll/plugin.php on line 51
+[31-Jan-2016 12:51:11] PHP Parse error:  syntax error, unexpected T_FUNCTION in /home/tecma713/public_html/site/wp-content/plugins/pack-oll/plugin.php on line 51
+[31-Jan-2016 12:51:13] PHP Parse error:  syntax error, unexpected T_FUNCTION in /home/tecma713/public_html/site/wp-content/plugins/pack-oll/plugin.php on line 51
+[31-Jan-2016 12:51:17] PHP Parse error:  syntax error, unexpected T_FUNCTION in /home/tecma713/public_html/site/wp-content/plugins/pack-oll/plugin.php on line 51
+[31-Jan-2016 12:54:40] PHP Parse error:  syntax error, unexpected T_FUNCTION in /home/tecma713/public_html/site/wp-content/plugins/pack-oll/plugin.php on line 51
+[31-Jan-2016 12:55:06] PHP Parse error:  syntax error, unexpected T_FUNCTION in /home/tecma713/public_html/site/wp-content/plugins/pack-oll/plugin.php on line 51
+[31-Jan-2016 12:55:10] PHP Parse error:  syntax error, unexpected T_FUNCTION in /home/tecma713/public_html/site/wp-content/plugins/pack-oll/plugin.php on line 51
+[31-Jan-2016 12:55:11] PHP Parse error:  syntax error, unexpected T_FUNCTION in /home/tecma713/public_html/site/wp-content/plugins/pack-oll/plugin.php on line 51
+[31-Jan-2016 12:55:12] PHP Parse error:  syntax error, unexpected T_FUNCTION in /home/tecma713/public_html/site/wp-content/plugins/pack-oll/plugin.php on line 51
+[31-Jan-2016 13:22:16] PHP Fatal error:  Call to undefined function  have_rows() in /home/tecma713/public_html/site/wp-content/themes/tecmarques/a-empresa.php on line 32
+[09-Feb-2016 13:45:47] PHP Parse error:  syntax error, unexpected T_FUNCTION in /home/tecma713/public_html/site/wp-content/plugins/pack-oll/plugin.php on line 53

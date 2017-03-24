@@ -1,0 +1,46 @@
+/*!
+* Alternativa Pneus 1.0.1
+*
+* Publisher: Next Sites
+* Copyright: Next Sites 2015
+*
+* Author: Next Sites
+*
+* Develop Team: Elienay Macedo e Paulo Melo 
+*/
+
+@charset "UTF-8";
+
+/* Reset default styles */
+@import url("reset.css");
+
+/* Base CSS */
+
+@import url("base.css");
+@import url("typography.css");
+@import url("lists.css");
+@import url("form.css");
+@import url("table.css");
+
+/* Grid system and page structure */
+@import url("grid.css");
+@import url("clearfix.css");
+
+/* Components: Utilities */
+@import url("utilities.css");
+@import url("modal.css");
+@import url("common-classes.css");
+
+/* Components: Buttons & Icons */
+@import url("inputs.css");
+@import url("buttons.css");
+@import url("font-awesome.css");
+@import url("animation.css");
+
+/* Plugins */
+@import url("plugins/owl.css");
+@import url("plugins/mmenu.css");
+
+/* Style/Theme */
+@import url("screen.css");
+@import url("color.css");

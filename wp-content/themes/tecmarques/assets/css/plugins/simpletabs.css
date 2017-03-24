@@ -1,0 +1,54 @@
+/**
+ * @version		1.3
+ * @package		SimpleTabs
+ * @author    Fotis Evangelou - http://nuevvo.com/labs/simpletabs
+ * @copyright	Copyright (c) 2009-2011 Fotis Evangelou / Nuevvo Webware Ltd. All rights reserved.
+ * @license		GNU/GPL license: http://www.gnu.org/copyleft/gpl.html
+ */
+
+.simpleTabs {
+    position: relative;
+}
+.simpleTabsNavigation {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    text-align: center;
+    word-wrap: break-word;
+    vertical-align: top;
+    border-bottom: 2px solid #000;
+    background-color: #f68b20;
+    background: -webkit-linear-gradient(left, #f68b20 0%, #fcaf17 100%);
+    background: linear-gradient(to right, #f68b20 0%, #fcaf17 100%);
+}
+.simpleTabsNavigation li {
+    vertical-align: middle;
+    display: table-cell;
+    line-height: 40px;
+}
+.simpleTabsNavigation li:not(:last-of-type) {
+    border-right: 4px solid white;
+}
+
+.simpleTabsNavigation li a {
+    display: block;
+    vertical-align: top;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: white;
+    padding-left: 0.938em;
+    padding-right: 0.938em;
+}
+.simpleTabsNavigation li a:hover, .simpleTabsNavigation li a.current {
+    background: #000;
+    color: #f58220;
+}
+.simpleTabsContent {
+    box-shadow: inset 0 0 0 1px #eee;
+    display: none;
+}
+.simpleTabsContent.currentTab {
+    display: block;
+}

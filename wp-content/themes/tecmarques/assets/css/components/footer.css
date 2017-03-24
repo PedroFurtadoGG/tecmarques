@@ -1,0 +1,57 @@
+/*
+* Footer.css
+
+.global-footer {}
+
+.global-footer--info {}
+
+.global-footer--info img {}
+
+.global-footer--contact {}
+
+.global-footer--contact h3 {}
+
+.global-footer--contact address {}
+
+.global-footer--contact .phones {}
+
+.global-footer--contact .phones .phone {}
+
+.global-footer--contact .phones .phone .operadora {}
+
+.global-footer--copyright {}
+*/
+
+@media only screen and (max-width: 639px) and (min-width: 0px) {
+  html body .footer-nav {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+  .footer-nav li {
+    display: block;
+    float: none;
+  }
+  .footer-nav li a {
+    display: block;
+  }
+  .footer-nav .btn {
+    margin: 0;
+  }
+  .global-footer--container {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+  }
+}
+
+.dev-author img {
+  max-height: 25px;
+}
+
+#html .global-footer--nav li a {
+  padding: 0;
+}
+
+#html .global-footer--nav li a:hover {
+  color: #ddd;
+  text-decoration: underline;
+}

@@ -1,0 +1,210 @@
+/*
+* mobile-menu.css */
+
+.btn-toggle-menu {
+    position: relative;
+    z-index: 10;
+    padding: 0;
+    width: 35px;
+    height: 35px;
+    font-size: 28px;
+    line-height: 35px;
+    border-radius: 3px;
+    text-align: center;
+}
+.btn-toggle-menu .icon {
+    position: relative;
+    top: -2px;
+    font-size: 28px;
+    line-height: 1;
+    line-height: 35px;
+}
+.btn-toggle-menu-close {
+    float: right;
+    margin-top: 6px;
+}
+.btn-toggle-menu-close .fa {
+    font-size: 23px;
+}
+.mobile-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 99999;
+    overflow: auto;
+    color: white;
+    width: 90%;
+    height: 100%;
+    padding: 50px 0;
+    overflow-x: hidden;
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    -webkit-transition: all 200ms cubic-bezier(0.0, 0.0, 0.58, 1.0);
+    transition: all 200ms cubic-bezier(0.0, 0.0, 0.58, 1.0);
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+}
+.mobile-menu.mobile-menu--open {
+    display: block;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: all 320ms cubic-bezier(0.0, 0.0, 0.58, 1.0);
+    transition: all 320ms cubic-bezier(0.0, 0.0, 0.58, 1.0);
+}
+.mobile-menu.mobile-menu--layer-visible {}
+.overlay-mobile-menu {}
+.mobile-menu--header, .mobile-menu--footer {
+    height: 50px;
+    line-height: 50px;
+    padding: 0 1em;
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.mobile-menu--header {
+    margin-top: -50px;
+}
+.mobile-menu--footer {
+    margin-bottom: -50px;
+}
+.mobile-menu--container {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 2em 1em 0 1em;
+    overflow-x: hidden;
+}
+
+.mobile-menu--layer-visible .mobile-menu--container {
+    overflow: visible;
+}
+.mobile-menu--container > ul:not(:last-child) {
+    margin-bottom: 2em;
+}
+.mobile-menu--container > ul > li {
+    margin-left: -1em;
+    margin-right: -1em;
+}
+#mobileMenu ul {
+    word-wrap: break-word;
+    vertical-align: top;
+}
+#mobileMenu ul li {
+    line-height: 35px;
+    vertical-align: top;
+    position: static;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: white;
+}
+#mobileMenu ul li:not(:last-child) {
+    margin-bottom: 5px;
+}
+#mobileMenu ul li a {
+    display: block;
+    vertical-align: top;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+#mobileMenu ul.list-table li:not(:last-child) {
+    padding-right: 1em;
+}
+.list-social {
+    line-height: 50px;
+    width: auto;
+}
+.list-social li {
+    vertical-align: middle;
+    display: inline-block;
+}
+.list-social .fa {
+    line-height: 50px;
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+    text-align: center;
+    color: inherit;
+}
+.trigger-layer .fa.fa-angle-down {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin: 0;
+    font-size: 23px;
+}
+.trigger-layer .fa.fa-angle-down:before {
+    content: "\f105";
+}
+.mobile-menu--layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 999999;
+    margin-top: -50px;
+    margin-bottom: -50px;
+    overflow-y: auto;
+    width: 100%;
+    height: calc(100% + 100px);
+    padding: 50px 1em;
+    overflow-x: hidden;
+    -webkit-transition: all 200ms cubic-bezier(0.0, 0.0, 0.58, 1.0);
+    transition: all 200ms cubic-bezier(0.0, 0.0, 0.58, 1.0);
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+}
+.mobile-menu--layer.visible {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -webkit-transition: all 320ms cubic-bezier(0.0, 0.0, 0.58, 1.0);
+    transition: all 320ms cubic-bezier(0.0, 0.0, 0.58, 1.0);
+}
+.mobile-menu--layer .mobile-menu--header {
+    margin-left: -1em;
+    margin-right: -1em;
+}
+.mobile-menu--layer--btn-back {
+    line-height: 50px;
+    display: inline-block;
+    color: white;
+    height: 50px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 1em;
+    font-size: 15px;
+}
+.mobile-menu--layer--btn-back .fa-angle-left {
+    font-size: 28px;
+}
+.mobile-menu--layer > ul {
+    margin-top: 2em;
+}
+.mobile-menu--layer > ul > li {
+    margin-left: -1em;
+    margin-right: -1em;
+}
+
+/*
+ * Edição */
+
+#html .global-header--logo .btn-toggle-menu {
+    left: auto;
+    right: 0;
+}
+
+#mobileMenu .form-container #btnSubmit {
+    background-color: black;
+}
+#mobileMenu .form-container label {
+    color: inherit;
+}
+#mobileMenu .btn-lang, #mobileMenu .list-lang--item {
+    background-position: right 14px center;
+}

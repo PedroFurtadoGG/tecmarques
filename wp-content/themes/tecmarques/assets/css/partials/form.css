@@ -1,0 +1,42 @@
+/*
+ * form.css */
+
+label,
+button,
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+	cursor: pointer;
+}
+
+input[type="image"] {
+	background-color: transparent;
+}
+
+form label {
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none
+}
+
+form .input-group {
+	position: relative;
+	margin-bottom: 16px;
+}
+
+form .input-group.last,
+form .input-group:last-child,
+form .input-group:last-of-type {
+	margin-bottom: 0;
+}
+
+form .input-group input,
+form .input-group select,
+form .input-group textarea {
+	margin: 0
+}
+
+form input[type="radio"],
+form input[type="checkbox"] {
+	margin-right: 6px
+}

@@ -1,0 +1,137 @@
+/* comparison.css */
+
+.cd-image-container {
+    position: relative;
+    margin: 0 auto;
+    max-width: 100%;
+}
+
+.cd-image-container img {
+    display: block;
+}
+
+.cd-image-label {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding: 1em;
+    color: #ffffff;
+    opacity: 0;
+    -webkit-transition: -webkit-transform 0.3s 0.7s, opacity 0.3s 0.7s;
+    transition: transform 0.3s 0.7s, opacity 0.3s 0.7s;
+    -webkit-transform: translateY(20px);
+    -ms-transform: translateY(20px);
+    transform: translateY(20px);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.cd-image-label.is-hidden {
+    visibility: hidden;
+}
+
+.is-visible .cd-image-label {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+}
+
+.cd-resize-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    /* Force Hardware Acceleration in WebKit */
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+html body .cd-resize-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    max-width: none;
+    width: auto;
+    height: 100%;
+}
+
+.cd-resize-img .cd-image-label {
+    right: auto;
+    left: 0;
+}
+
+.is-visible .cd-resize-img {
+    width: 50%;
+    /* bounce in animation of the modified image */
+    -webkit-animation: cd-bounce-in 0.7s;
+    animation: cd-bounce-in 0.7s;
+}
+
+@-webkit-keyframes cd-bounce-in {
+    0% {
+        width: 0;
+    }
+    60% {
+        width: 55%;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes cd-bounce-in {
+    0% {
+        width: 0;
+    }
+    60% {
+        width: 55%;
+    }
+    100% {
+        width: 50%;
+    }
+}
+
+.cd-handle {
+    position: absolute;
+    top: 50%;
+    /* center the element */
+    left: 50%;
+    margin-top: -22px;
+    margin-left: -22px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: url("../img/cd-arrows.svg") no-repeat center center;
+    background-color: #ef518f;
+    box-shadow: 0 0 0 6px rgba(0, 0, 0, 0.2), 0 0 10px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.3);
+    opacity: 0;
+    cursor: move;
+    -webkit-transform: translate3d(0, 0, 0) scale(0);
+    -ms-transform: translate3d(0, 0, 0) scale(0);
+    transform: translate3d(0, 0, 0) scale(0);
+}
+
+.cd-handle:hover {
+    background-color: #f26aa1;
+}
+
+.cd-handle.draggable {
+    /* change background color when element is active */
+    background-color: #be3d6a;
+}
+
+.is-visible .cd-handle {
+    opacity: 1;
+    -webkit-transition: -webkit-transform 0.3s 0.7s, opacity 0s 0.7s;
+    transition: transform 0.3s 0.7s, opacity 0s 0.7s;
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    -ms-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+}
